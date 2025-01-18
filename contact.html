@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="elio">
-    <meta name="description" content="exercice to recreate an html page">
+    <meta name="description" content="the little taco store contact page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="theme-color" content="#226DAA">
 
@@ -23,7 +23,7 @@
             </ul>
         </nav>
         <figure>
-            <img src="img/tacos_tray_400x267.png" alt="tacos_tray_400x267" width="200" height="100">
+            <img src="img/tacos_tray_400x267.png" alt="tacos_tray_400x267" title="We love trays of tacos" width="400" height="267">
             <figcaption>Taco tray ???</figcaption>
         </figure>
         <hr>
@@ -35,10 +35,12 @@
             <form action="https://httpbin.org/post" method="post">
                 <fieldset>
                     <legend>Send us a message</legend>
-                    <p> Name: 
+                    <p> 
+                        <label for="name">Name:</label> 
                         <input type="text" name="name" id="name" placeholder="your name" autocomplete="on" required>
                     </p>
-                    <p> Email: 
+                    <p> 
+                        <label for="email">Email:</label> 
                         <input type="email" name="email" id="email" placeholder="your email" autocomplete="on" required>
                     </p>
                     <label for="message">Your message:</label>
@@ -61,10 +63,11 @@
     </main>
 
     <footer>
-        <a href="/store.html">Back to top</a>
+        <a href="#">Back to top</a>
         <br>
         <a href="/">Return home</a>
         <hr>
-        <p>Copyright &Coproduct; The Little Taco Store</p>
+        <p>Copyright &copy; The Little Taco Store</p>
     </footer>
 </body>
+</html>

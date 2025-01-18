@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="elio">
-    <meta name="description" content="exercice to recreate an html page">
+    <meta name="description" content="the official taco shop website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="theme-color" content="#226DAA">
 
@@ -16,14 +16,14 @@
         <h1>Welcome to The Little Taco Shop</h1>
         <nav>
             <ul>
-                <li><a href="#about">About LTS</a></li>
+                <li><a href="#about">About <abbr title="The Little Taco Shop">LTS</abbr></a></li>
                 <li><a href="#menu">Our Menu</a></li>
                 <li><a href="store.html">Store Hours</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <figure>
-            <img src="img/tacos_and_drink_400x267.png" alt="tacos and a drink on a table" width="300" height="150">
+            <img src="img/tacos_and_drink_400x267.png" alt="tacos and a drink on a table" title="We love tacos!" width="400" height="267">
             <figcaption>Tacos and a drink</figcaption>
         </figure>
         <hr>
@@ -31,17 +31,19 @@
     <main>
         <article id="about">
                 <h2>About us</h2>
-                <p> <abbr title="The Little Taco Shop">LTS</abbr> was founded in <time datetime="2022">2022</time>. Our shop
+                <p> 
+                    <abbr title="The Little Taco Shop">LTS</abbr> was founded in <time datetime="2022">2022</time>. Our shop
                     was built from a <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop adds a unique and interesting
-                    place to our little town.</p>
+                    place to our little town. 
+                </p>
                     
-            <section>
+            <aside>
                 <h3>Taco Trivia</h3>
                 <details>
                     <summary>When did tacos first appear in the US</summary>
-                    <p>Who cares ? It's delicious !</p>
+                    <p>Who cares ? It's delicious ! (Source: <cite><a href="https://www.387892.realquotes.andmore/delicious-tacos/" target="_blank">someone</a></cite>)</p>
                 </details>
-            </section>
+            </aside>
         <hr>
         </article>
         <article id="menu">
@@ -51,24 +53,22 @@
                 <caption>Menu</caption>
                 <thead>
                     <tr>
-                        <th scope="row">Tacos</th>
-                        <th scope="row"><abbr title="Quantity">Qty</abbr></th>
-                        <th scope="row">Price</th>
+                        <th >Tacos</th>
+                        <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+                        <th scope="col">Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th rowspan="3">Crunchy</th>
+                        <th scope="row" rowspan="3">Crunchy</th>
                         <td>1</td>
                         <td>$1.50</td>
                     </tr>
-                    <tr>
-                        
+                    <tr>    
                         <td>2</td>
                         <td>$2.50</td>
                     </tr>
-                    <tr>
-                        
+                    <tr>                       
                         <td>3</td>
                         <td>$3.25</td>
                     </tr>
@@ -90,15 +90,16 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="3">Chips & Salsa $2</td>
+                        <td colspan="3">Chips &amp; Salsa $2</td>
                     </tr>
                 </tfoot>
             </table>
         </article>
     </main>
     <footer>
-        <a href="/">Back to top</a>
+        <a href="#">Back to top</a>
         <hr>
-        <p>Copyright &Coproduct; The Little Taco Store</p>
+        <p>Copyright &copy; The Little Taco Store</p>
     </footer>
 </body>
+</html>
